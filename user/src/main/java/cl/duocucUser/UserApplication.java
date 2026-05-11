@@ -1,4 +1,4 @@
-package cl.duocuc.user;
+package cl.duocucUser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
