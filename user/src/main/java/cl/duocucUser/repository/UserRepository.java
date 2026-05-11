@@ -1,6 +1,6 @@
-package cl.duocucUser.Repository;
+package cl.duocucUser.repository;
 
-import cl.duocucUser.Model.User;
+import cl.duocucUser.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

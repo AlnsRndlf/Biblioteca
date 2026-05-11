@@ -1,4 +1,4 @@
-package cl.duocucUser.Model;
+package cl.duocucUser.model;
 
 import jakarta.persistence.*;
 

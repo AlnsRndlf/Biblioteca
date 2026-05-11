@@ -1,6 +1,6 @@
-package cl.duocucUser.Service;
+package cl.duocucUser.service;
 
-import cl.duocucUser.DTO.UserDto;
+import cl.duocucUser.dto.UserDto;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package cl.duocucUser.DTO;
+package cl.duocucUser.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.*;
