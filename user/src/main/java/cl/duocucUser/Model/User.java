@@ -13,9 +13,12 @@ import java.time.LocalDate;
 public class User {
     @Id
     private String rut;
+
     @Column(name = "full_name")
     private String fullName;
+
     private String email;
+
     @Column(name = "membershiped_date")
     private LocalDate membershipedDate;
 }
