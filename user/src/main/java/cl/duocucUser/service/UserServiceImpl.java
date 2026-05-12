@@ -51,10 +51,10 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public boolean deleteByRut(String rut) {
+    public void deleteByRut(String rut) {
         if(repository.existsById(rut)) {
             repository.deleteById(rut);
-            return true;
+            return;
         }
         throw new IllegalArgumentException("el usuario no existe");
     }
@@ -71,12 +71,12 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Optional<UserDto> updateEmail(String rut, String newEmail) {
+    public UserDto updateEmail(String rut, String newEmail) {
         User user = repository.findByRut(rut);
         if(user != null) {
             user.setEmail(newEmail);
             repository.save(user);
-            return Optional.of(this.toDto(user));
+            return  this.toDto(user);
         }
         else  {
             throw new IllegalArgumentException("el usuario no existe");
@@ -84,12 +84,12 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Optional<UserDto> updateFullName(String rut, String newFullName) {
+    public UserDto updateFullName(String rut, String newFullName) {
         User user = repository.findByRut(rut);
         if(user != null) {
             user.setFullName(newFullName);
             repository.save(user);
-            return Optional.of(this.toDto(user));
+            return this.toDto(user);
         }
         else  {
             throw new IllegalArgumentException("el usuario no existe");

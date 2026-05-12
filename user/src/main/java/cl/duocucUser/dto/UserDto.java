@@ -10,7 +10,6 @@ import java.time.LocalDate;
 @AllArgsConstructor @NoArgsConstructor
 public class UserDto {
 
-
     @Pattern(regexp = "^[0-9]{7,8}-[0-9kK]$")
     private String rut;
 
@@ -25,5 +24,4 @@ public class UserDto {
     @NotNull(message = "la fehca no puede estar vacia")
     @PastOrPresent(message = "la fecha todavia no ocurre")
     private LocalDate membershipedDate;
-
 }
