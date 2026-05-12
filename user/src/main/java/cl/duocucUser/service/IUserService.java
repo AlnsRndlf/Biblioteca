@@ -9,9 +9,9 @@ import java.util.Optional;
 public interface IUserService {
     List<UserDto> findAll();
     Optional<UserDto> findByRut(String rut);
-    Optional<UserDto> findByEmail(String email);
+    Optional<UserDto> findByEmail(String rut);
     UserDto save(UserDto userDto);
     Optional<UserDto> updateFullName(String rut, String newFullName);
-    Optional<UserDto> updateEmail(String rut, String newEmail);
-    void deleteByRut(String rut);
+    Optional<UserDto> updateEmail(String email, String newEmail);
+    boolean deleteByRut(String rut);
 }
