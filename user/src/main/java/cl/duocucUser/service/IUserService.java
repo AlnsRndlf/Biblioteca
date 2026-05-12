@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface IUserService {
     List<UserDto> findAll();
     Optional<UserDto> findByRut(String rut);
-    Optional<UserDto> findByEmail(String rut);
+    Optional<UserDto> findByEmail(String email);
     UserDto save(UserDto userDto);
     Optional<UserDto> updateFullName(String rut, String newFullName);
     Optional<UserDto> updateEmail(String email, String newEmail);

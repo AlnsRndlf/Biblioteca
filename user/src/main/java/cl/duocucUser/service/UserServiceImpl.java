@@ -60,8 +60,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Optional<UserDto> findByEmail(String rut) {
-        User user = repository.findByEmail(rut);
+    public Optional<UserDto> findByEmail(String email) {
+        User user = repository.findByEmail(email);
         if(user != null) {
             return Optional.of(this.toDto(user));
         }
