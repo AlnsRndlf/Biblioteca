@@ -86,12 +86,11 @@ public class UserServiceImpl implements IUserService {
     @Override
     public UserDto updateFullName(String rut, String newFullName) {
         User user = repository.findByRut(rut);
-        if(user != null) {
+        if (user != null) {
             user.setFullName(newFullName);
             repository.save(user);
             return this.toDto(user);
-        }
-        else  {
+        } else {
             throw new IllegalArgumentException("el usuario no existe");
         }
     }

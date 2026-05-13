@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @AllArgsConstructor @NoArgsConstructor
 public class UserDto {
 
-    @Pattern(regexp = "^[0-9]{7,8}-[0-9kK]$")
+    @Pattern(regexp = "^[0-9]{7,8}-[0-9kK]$", message = "debe ser formato 12345678-k")
     private String rut;
 
     @NotBlank(message = "nombre completo no puede estar vacio")

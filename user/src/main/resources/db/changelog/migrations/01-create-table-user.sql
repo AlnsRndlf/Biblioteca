@@ -2,10 +2,10 @@
 -- changeset alonso:1
 
 create table app_user (
-    rut varchar(13) primary key,
-    full_name varchar(255) not null,
-    email varchar(255) unique not null,
-    membershiped_date DATE
+                          rut varchar(13) primary key,
+                          full_name varchar(255) not null,
+                          email varchar(255) unique not null,
+                          membershiped_date DATE
 );
 
 
@@ -85,4 +85,3 @@ INSERT INTO app_user (rut, full_name, email, membershiped_date) VALUES
 
 INSERT INTO app_user (rut, full_name, email, membershiped_date) VALUES
     ('18912346-3', 'Ignacio Araya', 'ignacio.araya@gmail.com', DATE '2024-03-05');
-

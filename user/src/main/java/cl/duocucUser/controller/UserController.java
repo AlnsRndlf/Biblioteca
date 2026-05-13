@@ -33,6 +33,13 @@ public class UserController {
             throw new IllegalArgumentException("el usuario no existe");
         }
     }
+    /*
+    @GetMapping("/{rut}")
+    public ResponseEntity<UserDto> findByRut(@PathVariable String rut) {
+        Optional<UserDto> user = service.findByRut(rut);
+        return ResponseEntity.ok(user.get());
+    }
+     */
 
     @GetMapping("/email/{email}")
     public ResponseEntity<UserDto> findByEmail(@PathVariable String email) {
@@ -48,24 +55,24 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserDto> save(@Valid @RequestBody UserDto userDto) {
         UserDto savedUser = service.save(userDto);
-        return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
+        return new ResponseEntity<>( HttpStatus.CREATED);
     }
 
     @PatchMapping("/{rut}/cambioNombre/{newFullName}")
     public ResponseEntity <UserDto> updateFullname(@PathVariable String rut, @Valid @PathVariable("newFullName") String newFullname) {
         UserDto updated = service.updateFullName(rut,newFullname);
-            return ResponseEntity.ok(updated);
+        return ResponseEntity.ok(updated);
     }
 
     @PatchMapping("/{rut}/cambioEmail/{newEmail}")
     public ResponseEntity<UserDto> updateEmail(@PathVariable String rut, @Valid @PathVariable("newEmail") String newEmail) {
         UserDto updated = service.updateEmail(rut, newEmail);
-            return ResponseEntity.ok(updated);
+        return ResponseEntity.ok(updated);
     }
 
     @DeleteMapping("/{rut}")
     public ResponseEntity<Void> deleteByRut(@PathVariable String rut) {
         service.deleteByRut(rut);
-            return ResponseEntity.noContent().build();
+        return ResponseEntity.noContent().build();
     }
 }
