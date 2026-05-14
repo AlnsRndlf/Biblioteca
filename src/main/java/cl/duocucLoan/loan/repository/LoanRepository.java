@@ -11,4 +11,5 @@ public interface LoanRepository extends JpaRepository<Loan, Long> {
 
     List<Loan> findByBookIsbn(Long bookIsbn);
     List<Loan> findByUserRut(String rut);
+
 }

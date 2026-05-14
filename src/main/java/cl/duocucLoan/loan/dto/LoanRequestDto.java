@@ -20,4 +20,5 @@ public class LoanRequestDto {
     @Max(value = 9999999999999L, message = "el ISBN tiene que ser de 13 digitos.")
     @NotNull(message = "el ISBN es obligatorio")
     private Long bookIsbn;
+
 }

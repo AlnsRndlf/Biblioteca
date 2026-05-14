@@ -22,7 +22,6 @@ public class LoanServiceImpl implements ILoanService {
     private final UserClient userClient;
     private final BookClient bookClient;
 
-
     private LoanResponseDto toDto(Loan loan) {
         UserResponseDto userDto = userClient.getUserByRut(loan.getUserRut());
         BookResponseDto bookDto = bookClient.getBookByIsbn(loan.getBookIsbn());
@@ -61,7 +60,5 @@ public class LoanServiceImpl implements ILoanService {
         }
         return toDto(loan);
     }
-
-
 
 }
