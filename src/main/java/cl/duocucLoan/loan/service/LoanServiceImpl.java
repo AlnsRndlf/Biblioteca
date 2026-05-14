@@ -49,7 +49,16 @@ public class LoanServiceImpl implements ILoanService {
     public List<LoanResponseDto> findAll() {
         return loanRepository.findAll()
                 .stream()
-                .map(this::toDto).toList();
+                .map(this::toDto)
+                .toList();
+    }
+
+    @Override
+    public List<LoanResponseDto> findByUserRut(String rut) {
+        return loanRepository.findByUserRut(rut)
+                .stream()
+                .map(this::toDto)
+                .toList();
     }
 
     @Override
@@ -59,6 +68,35 @@ public class LoanServiceImpl implements ILoanService {
             throw new RuntimeException("prestamo de " +  idLoan + " no encontrado");
         }
         return toDto(loan);
+    }
+
+    @Override
+    public LoanResponseDto returnBook(Long idLoan) {
+        Loan loan = loanRepository.findById(idLoan).orElse(null);
+        if (loan == null) {
+            throw new RuntimeException("prestamo de " +  idLoan + " no encontrado");
+        }
+        loan.setReturnedDate(LocalDate.now());
+        bookClient.updateStock(loan.getBookIsbn(),1);
+        Loan updatedLoan = loanRepository.save(loan);
+        return toDto(updatedLoan);
+    }
+
+    @Override
+    public LoanResponseDto save(LoanRequestDto request) {
+        UserResponseDto userDto = userClient.getUserByRut(request.getUserRut());
+        if (userDto == null) {
+            throw new RuntimeException("usuario no encontrado.");
+        }
+        BookResponseDto bookDto = bookClient.getBookByIsbn(request.getBookIsbn());
+        if (bookDto == null) {
+            throw new RuntimeException("libro no encontrado.");
+        }
+        Loan loan = toEntity(request);
+        bookClient.updateStock(request.getBookIsbn(), -1);
+        Loan savedLoan = loanRepository.save(loan);
+        return toDto(savedLoan);
+
     }
 
 }
