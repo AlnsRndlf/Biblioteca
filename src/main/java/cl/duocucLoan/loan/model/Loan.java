@@ -11,12 +11,12 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-//@Table(name="loans")
+@Table(name="loans")
 public class Loan {
 
-    //Column name id_loan
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name ="id_loan")
     private Long idLoan;
 
     @Column(name="book_isbn")
