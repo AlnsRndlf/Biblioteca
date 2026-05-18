@@ -2,7 +2,6 @@ package cl.duocucLoan.loan.controller;
 
 import cl.duocucLoan.loan.dto.ExceptionDto;
 import feign.FeignException;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -31,14 +30,14 @@ public class GlobalExcpetionHandler {
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @ExceptionHandler(FeignException.NotFound.class)
-    public ResponseEntity<ExceptionDto> handleFeignException(FeignException.NotFound ex) {
+    @ExceptionHandler(FeignException.class)
+    public ResponseEntity<ExceptionDto> handleFeignException(FeignException ex) {
         String message = "el recurso no existe";
         String url = ex.request().url();
         if(url.contains("users")) {
             message = "usuario no encontrado";
         }
-        else if(url.contains("books")) {
+        if (url.contains("books")) {
             message = "libro no encontrado";
         }
         return new ResponseEntity<>(new ExceptionDto("error de negocio", message), HttpStatus.NOT_FOUND);
