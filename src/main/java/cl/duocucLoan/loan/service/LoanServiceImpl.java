@@ -102,6 +102,7 @@ public class LoanServiceImpl implements ILoanService {
         Loan loan = toEntity(request);
         bookClient.updateStock(request.getBookIsbn(), -1);
         Loan savedLoan = loanRepository.save(loan);
+        /*
         LoanEventDto event = new LoanEventDto(
                 savedLoan.getIdLoan(),
                 savedLoan.getUserRut(),
@@ -109,7 +110,8 @@ public class LoanServiceImpl implements ILoanService {
                 savedLoan.getLoanDate(),
                 userDto.getUserEmail()
         );
-        producer.sendLoandEvent(event);
+        */
+        //producer.sendLoandEvent(event); lo vimo kafka. inconfigurable el qlo
         return toDto(savedLoan);
     }
 
