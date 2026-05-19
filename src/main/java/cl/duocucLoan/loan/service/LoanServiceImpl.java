@@ -18,7 +18,7 @@ public class LoanServiceImpl implements ILoanService {
     private final LoanRepository loanRepository;
     private final UserClient userClient;
     private final BookClient bookClient;
-    private final KafkaProducer producer;
+    //private final KafkaProducer producer;
 
     private LoanResponseDto toDto(Loan loan) {
         UserResponseDto userDto = userClient.getUserByRut(loan.getUserRut());
