@@ -13,7 +13,7 @@ public class ReservationResponseDto {
 
     private Long idReservation;
     private String userRut;
-    private String bookIsbn;
+    private Long bookIsbn;
     private LocalDate reservationDate;
     private String status;
 }

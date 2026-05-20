@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "reservation")
+@Table(name = "reservations")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,7 +23,7 @@ public class Reservation {
     private String userRut;
 
     @Column(nullable = false, name = "book_isbn")
-    private String bookIsbn;
+    private Long bookIsbn;
 
 
     @Column(nullable = false, name = "reservation_date")
