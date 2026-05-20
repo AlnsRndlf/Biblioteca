@@ -33,6 +33,7 @@ public class UserController {
             throw new IllegalArgumentException("el usuario no existe");
         }
     }
+
     /*
     @GetMapping("/{rut}")
     public ResponseEntity<UserDto> findByRut(@PathVariable String rut) {

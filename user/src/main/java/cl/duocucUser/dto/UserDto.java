@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @AllArgsConstructor @NoArgsConstructor
 public class UserDto {
 
+    @NotBlank(message = "el rut es obligatorio")
     @Pattern(regexp = "^[0-9]{7,8}-[0-9kK]$", message = "debe ser formato 12345678-k")
     private String rut;
 

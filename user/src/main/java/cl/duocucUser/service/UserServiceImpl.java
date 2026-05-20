@@ -37,6 +37,7 @@ public class UserServiceImpl implements IUserService {
     public List<UserDto> findAll() {
         return repository.findAll().stream().map(this::toDto).toList();
     }
+
     @Override
     public Optional<UserDto> findByRut(String rut) {
         return repository.findById(rut).map(this::toDto);
