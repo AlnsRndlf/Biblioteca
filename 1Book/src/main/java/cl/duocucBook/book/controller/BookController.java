@@ -25,11 +25,10 @@ public class BookController {
     }
 
     @GetMapping("/{isbn}")
-    public ResponseEntity<BookDto> findByIsbn(@PathVariable Long isbn) { // no deberia tmb modificar aca tmb a Optional<>
+    public ResponseEntity<BookDto> findByIsbn(@PathVariable Long isbn) {
         Optional<BookDto> book = service.findByIsbn(isbn);
         if(book.isPresent()) {
             return ResponseEntity.ok(book.get());
-
         }
         else {
             throw new IllegalArgumentException("libro de isbn: " + isbn + " no encontrado");
@@ -62,14 +61,9 @@ public class BookController {
         return ResponseEntity.noContent().build();
     }
 
-    @PatchMapping("/{isbn}/stock/{quantity}")
+    @PutMapping("/{isbn}/stock/{quantity}")
     public ResponseEntity<BookDto> updateStock(@PathVariable Long isbn, @PathVariable int quantity) {
             BookDto updated = service.updateStock(isbn, quantity);
-            if(updated != null) {
-                return ResponseEntity.ok(updated);
-            }
-            else {
-                return ResponseEntity.notFound().build();
-            }
+            return ResponseEntity.ok(updated);
         }
 }
