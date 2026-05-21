@@ -64,8 +64,8 @@ public class UserController {
     }
 
     @DeleteMapping("/{rut}")
-    public ResponseEntity<Void> deleteByRut(@PathVariable String rut) {
+    public ResponseEntity<String> deleteByRut(@PathVariable String rut) {
         service.deleteByRut(rut);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok("usuario eliminado correctamente.");
     }
 }
