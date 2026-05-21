@@ -56,9 +56,9 @@ public class BookController {
     }
 
     @DeleteMapping("/{isbn}")
-    public ResponseEntity<Void> delete(@PathVariable Long isbn) {
+    public ResponseEntity<String> delete(@PathVariable Long isbn) {
         service.deleteByIsbn(isbn);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok("libro eliminado correctamente");
     }
 
     @PutMapping("/{isbn}/stock/{quantity}")
