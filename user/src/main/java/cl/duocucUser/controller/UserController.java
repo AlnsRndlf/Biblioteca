@@ -34,14 +34,6 @@ public class UserController {
         }
     }
 
-    /*
-    @GetMapping("/{rut}")
-    public ResponseEntity<UserDto> findByRut(@PathVariable String rut) {
-        Optional<UserDto> user = service.findByRut(rut);
-        return ResponseEntity.ok(user.get());
-    }
-     */
-
     @GetMapping("/email/{email}")
     public ResponseEntity<UserDto> findByEmail(@PathVariable String email) {
         Optional<UserDto> user = service.findByEmail(email);
