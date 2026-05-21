@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -58,7 +59,15 @@ public class PenaltyServiceImpl implements IPenaltyService {
 
     @Override
     public List<PenaltyResponseDto> findByRut(String rut) {
-        return repository.findByUserRut(rut).stream().map(this::toDto).toList();
+        List<Penalty> penalties = repository.findByUserRut(rut);
+        if(penalties.isEmpty()) {
+            throw new RuntimeException("usuario no encontrado");
+        }
+        List<PenaltyResponseDto> userList = new ArrayList<>();
+        for (Penalty penalty : penalties) {
+            userList.add(toDto(penalty));
+        }
+        return userList;
     }
 }
 
