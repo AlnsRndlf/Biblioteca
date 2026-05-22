@@ -11,6 +11,7 @@ public interface UserClient {
     @GetMapping("/{rut}")
     UserResponseDto getUserByRut(@PathVariable("rut") String rut);
 
+    // para sincronizar con kafka y java the rial mail sender ¿será?
     @GetMapping("/{email}")
     UserResponseDto getUserByEmail(@PathVariable("email") String email);
 }
