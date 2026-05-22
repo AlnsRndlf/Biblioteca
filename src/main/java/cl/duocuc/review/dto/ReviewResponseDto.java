@@ -13,7 +13,7 @@ public class ReviewResponseDto {
 
     private Long idReview;
     private String userRut;
-    private String bookIsbn;
+    private Long bookIsbn;
     private Integer rating;
     private String comment;
     private LocalDate created_at;
