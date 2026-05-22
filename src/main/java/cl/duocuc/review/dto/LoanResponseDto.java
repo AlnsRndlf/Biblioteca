@@ -11,5 +11,5 @@ public class LoanResponseDto {
 
     private Long idLoan;
     private String userRut;
-    private String bookIsbn;
+    private Long bookIsbn;
 }

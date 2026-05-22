@@ -9,5 +9,5 @@ import java.util.List;
 public interface IReviewService {
     ReviewResponseDto save(ReviewRequestDto request);
     List<ReviewResponseDto> findAll();
-    List<ReviewResponseDto> findByBookIsbn(String bookIsbn);
+    List<ReviewResponseDto> findByBookIsbn(Long bookIsbn);
 }
