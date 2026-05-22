@@ -12,9 +12,8 @@ import org.springframework.stereotype.Service;
 public class ReviewServiceImpl {
 
     private final IReviewRepository repository;
+
     private final LoanClient loanClient;
 
-    public ReviewResponseDto toDto(Review review) {
-
-    }
+    //public ReviewResponseDto toDto(Review review) {}
 }
