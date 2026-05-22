@@ -10,4 +10,5 @@ public interface IReviewService {
     ReviewResponseDto save(ReviewRequestDto request);
     List<ReviewResponseDto> findAll();
     List<ReviewResponseDto> findByBookIsbn(Long bookIsbn);
+    ReviewResponseDto findById(Long idReview);
 }
