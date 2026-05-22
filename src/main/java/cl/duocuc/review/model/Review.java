@@ -25,7 +25,7 @@ public class Review {
     private String userRut;
 
     @Column(nullable = false,name="book_isbn")
-    private String bookIsbn;
+    private Long bookIsbn;
 
     @Column(nullable = false)
     private Integer rating;
