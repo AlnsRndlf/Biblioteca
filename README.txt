@@ -66,9 +66,10 @@ La URL base para consumir este servicio localmente sera:
 http://localhost:8081
 
 Rutas expuestas:
-  * GET    /api/v1/books         - Obtener todos los libros del catalogo
-  * GET    /api/v1/books/{isbn}  - Obtener un libro especifico por su ISBN
-  * GET    /api/v1/books/{title} - Obtener un libro especifico por su titulo
-  * POST   /api/v1/books         - Registrar un nuevo libro en el catalogo
-  * DELETE /api/v1/books/{isbn}  - Eliminar un libro especifico por su ISBN
+  * GET    /api/v1/books                         - Obtener todos los libros del catalogo
+  * GET    /api/v1/books/{isbn}                  - Obtener un libro especifico por su ISBN
+  * GET    /api/v1/books/{title}                 - Obtener un libro especifico por su titulo
+  * POST   /api/v1/books                         - Registrar un nuevo libro en el catalogo
+  * DELETE /api/v1/books/{isbn}                  - Eliminar un libro especifico por su ISBN
+  * PUT    /api/v1/books/{isbn}/stock/{quantity} - actualiza el stock de un libro según ISBN
 
