@@ -47,7 +47,10 @@ public class UserServiceImpl implements IUserService {
     @Override
     public UserDto save(UserDto userDto) {
         if (repository.existsById(userDto.getRut())) {
-            throw new IllegalArgumentException("ya existe el usuario");
+            throw new IllegalArgumentException("el rut "+ userDto.getRut() +"  ya esta registrado");
+        }
+        if(repository.existsByEmail(userDto.getEmail())) {
+            throw new IllegalArgumentException("el email "+userDto.getEmail()+" ya esta registrado");
         }
         return this.toDto(repository.save(this.toEntity(userDto)));
     }
