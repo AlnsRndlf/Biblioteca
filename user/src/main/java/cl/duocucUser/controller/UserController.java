@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/v1/users")
+@RequestMapping("/api/v1/usuarios")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -25,30 +25,18 @@ public class UserController {
 
     @GetMapping("/{rut}")
     public ResponseEntity<UserDto> findByRut(@PathVariable String rut) {
-        Optional<UserDto> user = service.findByRut(rut);
-        if (user.isPresent()) {
-            return ResponseEntity.ok(user.get());
-        }
-        else  {
-            throw new IllegalArgumentException("el usuario no existe");
-        }
+        return ResponseEntity.ok(service.findByRut(rut));
     }
 
     @GetMapping("/email/{email}")
     public ResponseEntity<UserDto> findByEmail(@PathVariable String email) {
-        Optional<UserDto> user = service.findByEmail(email);
-        if (user.isPresent()) {
-            return ResponseEntity.ok(user.get());
-        }
-        else  {
-            throw new IllegalArgumentException("el usuario no existe");
-        }
+        return ResponseEntity.ok(service.findByEmail(email));
     }
 
     @PostMapping
     public ResponseEntity<UserDto> save(@Valid @RequestBody UserDto userDto) {
-        UserDto savedUser = service.save(userDto);
-        return new ResponseEntity<>( HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(service.save(userDto));
     }
 
     @PatchMapping("/{rut}/cambioNombre/{newFullName}")
