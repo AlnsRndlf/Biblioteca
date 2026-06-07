@@ -46,7 +46,7 @@ public class BookController {
     }
 
     @PutMapping("/{isbn}/stock/{quantity}")
-    public ResponseEntity<BookDto> updateStock(@PathVariable Long isbn, @PathVariable int quantity) {
+    public ResponseEntity<BookDto> updateStock(@PathVariable("isbn") Long isbn, @PathVariable("quantity") int quantity) {
         return ResponseEntity.ok(service.updateStock(isbn, quantity));
     }
 }
