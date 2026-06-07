@@ -34,7 +34,8 @@ public class BookController {
 
     @PostMapping
     public ResponseEntity<BookDto> save(@Valid @RequestBody BookDto bookDTO) {
-        return new ResponseEntity<>(service.save(bookDTO), HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(service.save(bookDTO));
     }
 
     @DeleteMapping("/{isbn}")

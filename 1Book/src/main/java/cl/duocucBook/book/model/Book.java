@@ -10,8 +10,10 @@ public class Book {
 
     @Id
     private Long isbn;
+
     private String title;
     private String author;
+
     @Column(name = "year_publicated")
     private Integer yearPublicated;
     private Integer stock;
