@@ -13,7 +13,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/api/v1/books")
+@RequestMapping("/api/v1/libros")
 @RequiredArgsConstructor
 public class BookController {
 
@@ -26,44 +26,27 @@ public class BookController {
 
     @GetMapping("/{isbn}")
     public ResponseEntity<BookDto> findByIsbn(@PathVariable Long isbn) {
-        Optional<BookDto> book = service.findByIsbn(isbn);
-        if(book.isPresent()) {
-            return ResponseEntity.ok(book.get());
-        }
-        else {
-            throw new IllegalArgumentException("libro de isbn: " + isbn + " no encontrado");
-        }
+        return ResponseEntity.ok(service.findByIsbn(isbn));
     }
 
     @GetMapping("/buscar/{title}")
-    public ResponseEntity<BookDto> findByTitle(@PathVariable("title") String title) {
-        Optional<BookDto> book = service.findByTitle(title);
-        if(book.isPresent()) {
-            return ResponseEntity.ok(book.get());
-        }
-        else {
-            throw new IllegalArgumentException("libro de isbn: " + title + " no encontrado");
-        }
+    public ResponseEntity<BookDto> findByTitle(@PathVariable String title) {
+        return ResponseEntity.ok(service.findByTitle(title));
     }
 
     @PostMapping
     public ResponseEntity<BookDto> save(@Valid @RequestBody BookDto bookDTO) {
-        BookDto saved = service.save(bookDTO);
-        if(saved != null) {
-            return new ResponseEntity<>(saved, HttpStatus.CREATED);
-        } else
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(service.save(bookDTO), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/{isbn}")
     public ResponseEntity<String> delete(@PathVariable Long isbn) {
         service.deleteByIsbn(isbn);
-        return ResponseEntity.ok("libro eliminado correctamente");
+        return ResponseEntity.ok("Libro eliminado correctamente.");
     }
 
     @PutMapping("/{isbn}/stock/{quantity}")
     public ResponseEntity<BookDto> updateStock(@PathVariable Long isbn, @PathVariable int quantity) {
-            BookDto updated = service.updateStock(isbn, quantity);
-            return ResponseEntity.ok(updated);
-        }
+        return ResponseEntity.ok(service.updateStock(isbn, quantity));
+    }
 }

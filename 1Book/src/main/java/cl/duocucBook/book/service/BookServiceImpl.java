@@ -2,7 +2,7 @@ package cl.duocucBook.book.service;
 
 import cl.duocucBook.book.dto.BookDto;
 import cl.duocucBook.book.model.Book;
-import cl.duocucBook.book.repository.BookRepository;
+import cl.duocucBook.book.repository.IBookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +14,9 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class BookServiceImpl implements IBookService {
 
-    private final BookRepository repository;
+    private final IBookRepository repository;
 
-    private BookDto toDTO(Book book) {
+    private BookDto toDto(Book book) {
         return new BookDto(
                 book.getIsbn(),
                 book.getTitle(),
@@ -40,39 +40,40 @@ public class BookServiceImpl implements IBookService {
     @Override
     public List<BookDto> findAll() {
         return repository.findAll().stream()
-                .map(this::toDTO)
+                .map(this::toDto)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public BookDto save(BookDto bookDTO) {
-        if(repository.existsById(bookDTO.getIsbn())) {
-            throw new IllegalArgumentException("ya existe un libro con ese isbn");
+    public BookDto save(BookDto bookDto) {
+        if(repository.existsById(bookDto.getIsbn())) {
+            throw new IllegalArgumentException("ya existe un libro con el isbn: "+bookDto.getIsbn());
         }
-        return this.toDTO(repository.save(this.toEntity(bookDTO)));
+        return this.toDto(repository.save(this.toEntity(bookDto)));
     }
 
     @Override
     public void deleteByIsbn(Long isbn) {
-        if(repository.existsById(isbn)) {
-            repository.deleteById(isbn);
+        if (!repository.existsById(isbn)) {
+            throw new IllegalArgumentException("no se encontro el libro de isbn: " + isbn);
         }
+        repository.deleteById(isbn);
     }
 
     @Override
-    public Optional<BookDto> findByIsbn(Long isbn) {
-        return repository.findById(isbn).map(this::toDTO);
+    public BookDto findByIsbn(Long isbn) {
+        return repository.findById(isbn)
+                .map(this::toDto)
+                .orElseThrow(() -> new IllegalArgumentException("no existe el libro con el isbn: " + isbn));
     }
 
     @Override
-    public Optional<BookDto> findByTitle(String title) {
+    public BookDto findByTitle(String title) {
         Book book = repository.findByTitle(title);
-        if(book != null) {
-            return Optional.of(this.toDTO(book));
+        if (book == null) {
+            throw new IllegalArgumentException("libro " +  title + " no encontrado");
         }
-        else {
-            return Optional.empty();
-        }
+        return this.toDto(book);
     }
 
     @Override
@@ -84,7 +85,7 @@ public class BookServiceImpl implements IBookService {
                 throw new IllegalArgumentException("Stock no puede ser negativo");
             }
             book.setStock(newStock);
-            return this.toDTO(repository.save(book));
+            return this.toDto(repository.save(book));
         }
         throw new IllegalArgumentException("Libro no encontrado");
     }
