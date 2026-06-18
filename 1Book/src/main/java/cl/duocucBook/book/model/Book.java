@@ -2,7 +2,7 @@ package cl.duocucBook.book.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
+// rompi algo?
 @Entity
 @Data @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
