@@ -22,13 +22,7 @@ public class LoanServiceImpl implements ILoanService {
 
     private LoanResponseDto toDto(Loan loan) {
         UserResponseDto userDto = userClient.getUserByRut(loan.getUserRut());
-        if (userDto == null) {
-            throw new RuntimeException("usuario  de rut "+loan.getUserRut()+" no encontrado");
-        }
         BookResponseDto bookDto = bookClient.getBookByIsbn(loan.getBookIsbn());
-        if (bookDto == null) {
-            throw new RuntimeException("libro de isbn"+loan.getBookIsbn()+" no encontrado");
-        }
         return new LoanResponseDto(
                 loan.getIdLoan(),
                 bookDto,
@@ -59,6 +53,11 @@ public class LoanServiceImpl implements ILoanService {
 
     @Override
     public List<LoanResponseDto> findByUserRut(String rut) {
+        try {
+            userClient.getUserByRut(rut);
+        } catch (feign.FeignException.NotFound e) {
+            throw new IllegalArgumentException("El usuario " + rut + " no existe.");
+        }
         return repository.findByUserRut(rut)
                 .stream()
                 .map(this::toDto)
@@ -69,7 +68,7 @@ public class LoanServiceImpl implements ILoanService {
     public LoanResponseDto findById(Long idLoan) {
         Loan loan = repository.findById(idLoan).orElse(null);
         if  (loan == null) {
-            throw new RuntimeException("prestamo " +  idLoan + " no encontrado");
+            throw new RuntimeException("prestamo de " +  idLoan + " no encontrado");
         }
         return toDto(loan);
     }
