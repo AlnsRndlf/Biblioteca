@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@FeignClient(name = "boook-service", url = "http://localhost:8081/api/v1/books")
+@FeignClient(name = "boook-service", url = "http://localhost:8081/api/v1/libros")
 public interface BookClient {
 
     @GetMapping("/{isbn}")

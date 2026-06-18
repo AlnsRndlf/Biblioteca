@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/loans")
+@RequestMapping("/api/v1/prestamos")
 @RequiredArgsConstructor
 public class LoanController  {
 
@@ -22,7 +22,7 @@ public class LoanController  {
         return ResponseEntity.ok(service.findAll());
     }
 
-    @GetMapping("/idLoan")
+    @GetMapping("/{idLoan}")
     public ResponseEntity<LoanResponseDto> findByIdLoan(@PathVariable("idLoan") Long idLoan) {
         return ResponseEntity.ok(service.findById(idLoan));
     }

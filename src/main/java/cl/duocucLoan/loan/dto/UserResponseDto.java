@@ -13,16 +13,16 @@ import java.time.LocalDate;
 public class UserResponseDto {
 
     @JsonProperty("rut")
-    private String Userut;
+    private String userRut;
 
     @JsonProperty("fullName")
     private String userName;
 
     @JsonProperty("email")
-    private String UserEmail;
+    private String userEmail;
 
     @JsonProperty("membershipedDate")
-    private LocalDate UserMembershipedDate;
+    private LocalDate userMembershipedDate;
 
 }
 

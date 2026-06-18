@@ -4,7 +4,7 @@ import cl.duocucLoan.loan.client.BookClient;
 import cl.duocucLoan.loan.client.UserClient;
 import cl.duocucLoan.loan.dto.*;
 import cl.duocucLoan.loan.model.Loan;
-import cl.duocucLoan.loan.repository.LoanRepository;
+import cl.duocucLoan.loan.repository.ILoanRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LoanServiceImpl implements ILoanService {
 
-    private final LoanRepository loanRepository;
+    private final ILoanRepository repository;
     private final UserClient userClient;
     private final BookClient bookClient;
     //private final KafkaProducer producer;
@@ -51,7 +51,7 @@ public class LoanServiceImpl implements ILoanService {
 
     @Override
     public List<LoanResponseDto> findAll() {
-        return loanRepository.findAll()
+        return repository.findAll()
                 .stream()
                 .map(this::toDto)
                 .toList();
@@ -59,7 +59,7 @@ public class LoanServiceImpl implements ILoanService {
 
     @Override
     public List<LoanResponseDto> findByUserRut(String rut) {
-        return loanRepository.findByUserRut(rut)
+        return repository.findByUserRut(rut)
                 .stream()
                 .map(this::toDto)
                 .toList();
@@ -67,16 +67,16 @@ public class LoanServiceImpl implements ILoanService {
 
     @Override
     public LoanResponseDto findById(Long idLoan) {
-        Loan loan = loanRepository.findById(idLoan).orElse(null);
+        Loan loan = repository.findById(idLoan).orElse(null);
         if  (loan == null) {
-            throw new RuntimeException("prestamo de " +  idLoan + " no encontrado");
+            throw new RuntimeException("prestamo " +  idLoan + " no encontrado");
         }
         return toDto(loan);
     }
 
     @Override
     public LoanResponseDto returnBook(Long idLoan) {
-        Loan loan = loanRepository.findById(idLoan).orElse(null);
+        Loan loan = repository.findById(idLoan).orElse(null);
         if (loan == null) {
             throw new RuntimeException("prestamo de " +  idLoan + " no encontrado");
         }
@@ -85,7 +85,7 @@ public class LoanServiceImpl implements ILoanService {
         }
         loan.setReturnedDate(LocalDate.now());
         bookClient.updateStock(loan.getBookIsbn(),1);
-        Loan updatedLoan = loanRepository.save(loan);
+        Loan updatedLoan = repository.save(loan);
         return toDto(updatedLoan);
     }
 
@@ -101,7 +101,7 @@ public class LoanServiceImpl implements ILoanService {
         }
         Loan loan = toEntity(request);
         bookClient.updateStock(request.getBookIsbn(), -1);
-        Loan savedLoan = loanRepository.save(loan);
+        Loan savedLoan = repository.save(loan);
         /*
         LoanEventDto event = new LoanEventDto(
                 savedLoan.getIdLoan(),

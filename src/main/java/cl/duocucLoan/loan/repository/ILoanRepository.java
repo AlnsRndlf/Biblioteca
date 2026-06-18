@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface LoanRepository extends JpaRepository<Loan, Long> {
+public interface ILoanRepository extends JpaRepository<Loan, Long> {
 
     List<Loan> findByUserRut(String rut);
 
