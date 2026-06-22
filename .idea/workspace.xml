@@ -5,54 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/BookApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/src/test/java/cl/duocucBook/book/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/test/java/cl/duocucBook/book/BookApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/client/BookClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/client/BookClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/BookResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/external/BookResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/LoanResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/LoanResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/UserResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/dto/external/UserResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/LoanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/dto/PenaltyResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/dto/PenaltyResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/dto/UserResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/dto/external/UserResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/service/PenaltyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/service/PenaltyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/client/BookClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/client/BookClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/dto/BookResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/dto/external/BookResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/dto/UserResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/dto/external/UserResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/service/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/service/ReservationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/changelog-master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/migrations/01-create-table-reservation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/migrations/01-create-table-reservations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/BookClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/BookClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/LoanClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/LoanClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/BookResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/external/BookResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/LoanResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/external/LoanResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/UserResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/dto/external/UserResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/service/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/src/main/java/cl/duocuc/notification/NotificationApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/src/main/java/cl/duocuc/notification/customer/LoanCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/src/main/java/cl/duocuc/notification/dto/LoanEventDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-ms-Notification/src/test/java/cl/duocuc/notification/NotificationApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -23,7 +23,7 @@ public class PenaltyController {
         return new ResponseEntity<>(responses, HttpStatus.OK);
     }
 
-    @GetMapping("/user/{rut}")
+    @GetMapping("/usuario/{rut}")
     public ResponseEntity<List<PenaltyResponseDto>> getByRut(@PathVariable("rut") String rut) {
         List<PenaltyResponseDto> responses = service.findByRut(rut);
         return new ResponseEntity<>(responses, HttpStatus.OK);

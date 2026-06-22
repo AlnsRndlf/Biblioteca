@@ -27,7 +27,7 @@ public class LoanController  {
         return ResponseEntity.ok(service.findById(idLoan));
     }
 
-    @GetMapping("/user/{rut}")
+    @GetMapping("/usuario/{rut}")
     public ResponseEntity<List<LoanResponseDto>> findByUser(@PathVariable("rut") String rut) {
         return ResponseEntity.ok(service.findByUserRut(rut));
     }

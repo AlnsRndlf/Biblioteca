@@ -22,7 +22,7 @@ public class ReviewController {
         return ResponseEntity.ok(service.findAll());
     }
 
-    @GetMapping("/book/{bookIsbn}")
+    @GetMapping("/libro/{bookIsbn}")
     public ResponseEntity<List<ReviewResponseDto>> findByBookIsbn(@PathVariable Long bookIsbn) {
         return ResponseEntity.ok(service.findByBookIsbn(bookIsbn));
     }
