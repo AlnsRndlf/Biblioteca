@@ -1,4 +1,4 @@
-package cl.duocuc.reservation.dto;
+package cl.duocuc.reservation.dto.external;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package cl.duocuc.reservation.client;
 
-import cl.duocuc.reservation.dto.BookResponseDto;
+import cl.duocuc.reservation.dto.external.BookResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

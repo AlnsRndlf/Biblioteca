@@ -1,4 +1,4 @@
-package cl.duocucLoan.loan.dto;
+package cl.duocucLoan.loan.dto.external;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -3,6 +3,8 @@ package cl.duocucLoan.loan.service;
 import cl.duocucLoan.loan.client.BookClient;
 import cl.duocucLoan.loan.client.UserClient;
 import cl.duocucLoan.loan.dto.*;
+import cl.duocucLoan.loan.dto.external.BookResponseDto;
+import cl.duocucLoan.loan.dto.external.UserResponseDto;
 import cl.duocucLoan.loan.model.Loan;
 import cl.duocucLoan.loan.repository.ILoanRepository;
 import lombok.RequiredArgsConstructor;

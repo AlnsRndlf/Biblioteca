@@ -1,4 +1,4 @@
-package cl.duocuc.review.dto;
+package cl.duocuc.review.dto.external;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

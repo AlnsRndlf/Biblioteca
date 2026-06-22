@@ -1,4 +1,4 @@
-package cl.duocuc.penalty.dto;
+package cl.duocuc.penalty.dto.external;
 
 
 import lombok.AllArgsConstructor;

@@ -1,0 +1,12 @@
+en casos que este algun puerto ocupado:
+# encontrar el PID
+- netstat -ano | findstr :{puerto}
+  |-devuelve el PID
+
+# q programa es
+- tasklist | findstr {PID}
+
+# cierra el programa y libera el puerto
+- taskkill /PID {PID} /F
+
+

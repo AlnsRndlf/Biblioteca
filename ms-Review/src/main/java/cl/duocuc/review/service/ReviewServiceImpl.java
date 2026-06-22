@@ -4,6 +4,9 @@ import cl.duocuc.review.client.BookClient;
 import cl.duocuc.review.client.LoanClient;
 import cl.duocuc.review.client.UserClient;
 import cl.duocuc.review.dto.*;
+import cl.duocuc.review.dto.external.BookResponseDto;
+import cl.duocuc.review.dto.external.LoanResponseDto;
+import cl.duocuc.review.dto.external.UserResponseDto;
 import cl.duocuc.review.model.Review;
 import cl.duocuc.review.repository.IReviewRepository;
 import lombok.RequiredArgsConstructor;
@@ -85,7 +88,7 @@ public class ReviewServiceImpl implements IReviewService {
         if (bookDto == null){
             throw new RuntimeException("el libro no existe");}
 
-        List<LoanResponseDto> userLoans = loanClient.findByUser(request.getUserRut());
+        List<LoanResponseDto> userLoans = loanClient.getUserByRut(request.getUserRut());
         boolean hasBorrowed = false;
 
         for(LoanResponseDto loan : userLoans){

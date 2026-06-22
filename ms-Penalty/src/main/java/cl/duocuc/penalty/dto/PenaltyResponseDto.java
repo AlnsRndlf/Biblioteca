@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class PenaltyResponseDto {
 
-    private Long id;
+    private Long idPenalty;
     private String userRut;
     private Integer amount;
     private String reason;

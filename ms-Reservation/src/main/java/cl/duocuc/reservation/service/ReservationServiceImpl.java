@@ -3,10 +3,10 @@ package cl.duocuc.reservation.service;
 
 import cl.duocuc.reservation.client.BookClient;
 import cl.duocuc.reservation.client.UserClient;
-import cl.duocuc.reservation.dto.BookResponseDto;
+import cl.duocuc.reservation.dto.external.BookResponseDto;
 import cl.duocuc.reservation.dto.ReservationRequestDto;
 import cl.duocuc.reservation.dto.ReservationResponseDto;
-import cl.duocuc.reservation.dto.UserResponseDto;
+import cl.duocuc.reservation.dto.external.UserResponseDto;
 import cl.duocuc.reservation.model.Reservation;
 import cl.duocuc.reservation.repository.ReservationRepository;
 import lombok.RequiredArgsConstructor;

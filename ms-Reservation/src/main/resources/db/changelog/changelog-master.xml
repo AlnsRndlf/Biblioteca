@@ -5,5 +5,5 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
-    <include file="db/changelog/migrations/01-create-table-reservation.sql"/>
+    <include file="/db/changelog/migrations/01-create-table-reservations.sql"/>
 </databaseChangeLog>

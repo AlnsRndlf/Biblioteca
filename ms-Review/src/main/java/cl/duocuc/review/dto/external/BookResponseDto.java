@@ -1,4 +1,4 @@
-package cl.duocuc.review.dto;
+package cl.duocuc.review.dto.external;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoanResponseDto {
+public class BookResponseDto {
 
-    private Long idLoan;
-    private String userRut;
     private Long bookIsbn;
+    private String bookTitle;
+    private String bookAuthor;
 }

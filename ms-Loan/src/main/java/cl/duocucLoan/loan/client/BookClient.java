@@ -1,7 +1,7 @@
 package cl.duocucLoan.loan.client;
 
 
-import cl.duocucLoan.loan.dto.BookResponseDto;
+import cl.duocucLoan.loan.dto.external.BookResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

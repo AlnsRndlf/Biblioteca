@@ -3,7 +3,7 @@ package cl.duocuc.penalty.service;
 import cl.duocuc.penalty.client.UserClient;
 import cl.duocuc.penalty.dto.PenaltyRequestDto;
 import cl.duocuc.penalty.dto.PenaltyResponseDto;
-import cl.duocuc.penalty.dto.UserResponseDto;
+import cl.duocuc.penalty.dto.external.UserResponseDto;
 import cl.duocuc.penalty.model.Penalty;
 import cl.duocuc.penalty.repository.IPenaltyRepository;
 import lombok.RequiredArgsConstructor;

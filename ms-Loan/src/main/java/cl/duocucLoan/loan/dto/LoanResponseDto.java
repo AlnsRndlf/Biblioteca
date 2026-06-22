@@ -1,5 +1,7 @@
 package cl.duocucLoan.loan.dto;
 
+import cl.duocucLoan.loan.dto.external.BookResponseDto;
+import cl.duocucLoan.loan.dto.external.UserResponseDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

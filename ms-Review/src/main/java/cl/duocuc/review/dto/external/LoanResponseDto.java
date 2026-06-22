@@ -1,19 +1,15 @@
-package cl.duocuc.notification.dto;
+package cl.duocuc.review.dto.external;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoanEventDto {
+public class LoanResponseDto {
 
-    private Long loanId;
+    private Long idLoan;
     private String userRut;
     private Long bookIsbn;
-    private LocalDate loanDate;
-    private String userEmail;
 }
