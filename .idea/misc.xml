@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/ms-Reservation/pom.xml" />
         <option value="$PROJECT_DIR$/ms-ms-Notification/pom.xml" />
         <option value="$PROJECT_DIR$/ms-Notification/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-Auth/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-Eureka/pom.xml" />
       </list>
     </option>
   </component>
