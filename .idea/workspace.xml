@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/resources/db/changelog/migrations/01-create-table-book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/resources/db/changelog/migrations/01-create-table-book.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/resources/db/changelog/migrations/01-create-table-loan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/resources/db/changelog/migrations/01-create-table-loan.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/resources/db/changelog/migrations/01-create-table-penalties.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/resources/db/changelog/migrations/01-create-table-penalties.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/migrations/01-create-table-reservations.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/db/changelog/migrations/01-create-table-reservations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/resources/db/changelog/migrations/01-create-table-reviews.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/resources/db/changelog/migrations/01-create-table-reviews.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-User/src/main/resources/db/changelog/migrations/01-create-table-user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/resources/db/changelog/migrations/01-create-table-user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.PenaltyApplication">
+  <component name="RunManager" selected="Spring Boot.BookApplication">
     <configuration name="BookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="1Book" />
@@ -150,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PenaltyApplication" />
         <item itemvalue="Spring Boot.BookApplication" />
+        <item itemvalue="Spring Boot.PenaltyApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ReviewApplication" />
         <item itemvalue="Spring Boot.ReservationApplication" />

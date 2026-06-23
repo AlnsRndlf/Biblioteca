@@ -44,7 +44,7 @@ public class BookController {
         return ResponseEntity.ok("Libro eliminado correctamente.");
     }
 
-    @PutMapping("/{isbn}/stock/{quantity}")
+    @PatchMapping("/{isbn}/stock/{quantity}")
     public ResponseEntity<BookDto> updateStock(@PathVariable("isbn") Long isbn, @PathVariable("quantity") int quantity) {
         return ResponseEntity.ok(service.updateStock(isbn, quantity));
     }
