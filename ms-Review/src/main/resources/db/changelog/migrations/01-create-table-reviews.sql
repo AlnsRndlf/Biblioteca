@@ -1,6 +1,5 @@
 -- liquibase formatted sql
 -- changeset alonso:1
-
 create table reviews (
     id_review bigint auto_increment primary key ,
     user_rut varchar(13) not null ,
@@ -9,3 +8,6 @@ create table reviews (
     comment varchar(500),
     created_at date
 );
+
+-- changeset alonso:2
+RENAME TABLE reviews TO review;

@@ -1,6 +1,5 @@
 -- liquibase formatted sql
 -- changeset alonso:1
-
 create table book (
     isbn bigint primary key,
     title varchar(255),
@@ -10,7 +9,6 @@ create table book (
 );
 
 -- changeset alonso:2
-
 ALTER TABLE book
     CHANGE COLUMN sotck stock INT;
 
@@ -21,7 +19,6 @@ alter table book
 
 -- changeset alonso:4
 -- Poblar tabla BOOK con 25 registros
-
 INSERT INTO book (isbn, title, author, year_publicated, stock) VALUES
     (9780306406157, 'Clean Code', 'Robert C. Martin', 2008, 15);
 

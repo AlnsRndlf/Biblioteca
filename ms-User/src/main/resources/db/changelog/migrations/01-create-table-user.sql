@@ -1,16 +1,13 @@
 -- liquibase formatted sql
 -- changeset alonso:1
-
 create table app_user (
-                          rut varchar(13) primary key,
-                          full_name varchar(255) not null,
-                          email varchar(255) unique not null,
-                          membershiped_date DATE
+    rut varchar(13) primary key,
+    full_name varchar(255) not null,
+    email varchar(255) unique not null,
+    membershiped_date DATE
 );
 
-
 -- changeset alonso:2
-
 INSERT INTO app_user (rut, full_name, email, membershiped_date) VALUES
     ('12345678-k', 'Juan Perez', 'juan.perez@gmail.com', DATE '2024-02-10');
 

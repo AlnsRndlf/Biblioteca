@@ -1,6 +1,5 @@
 -- liquibase formatted sql
 -- changeset alonso:1
-
 create table loans (
     id_loan bigint auto_increment primary key ,
     book_isbn bigint not null,
@@ -11,5 +10,7 @@ create table loans (
 );
 
 -- changeset alonso:2
-
 alter table loans modify returned_date date null;
+
+-- changeset alonso:3
+RENAME TABLE loans TO loan;
