@@ -6,9 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +55,9 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -66,7 +88,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Estudiador/Documents/IntellijProjects/monorepo",
+    "last_opened_file_path": "C:/Users/Estudiador/Documents/Biblioteca",
     "nodejs_package_manager_path": "npm"
   },
   "keyToStringList": {
