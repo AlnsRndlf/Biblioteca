@@ -1,10 +1,11 @@
 package cl.duocucLoan.loan.service;
 
+/*
 
 import cl.duocucLoan.loan.dto.LoanEventDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.kafka.core.KafkaTemplate;
+//import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -19,3 +20,5 @@ public class KafkaProducer {
         this.kafkaTemplate.send(TOPIC_LOAN_EVENT, event);
     }
 }
+
+ */ // pa q voy a decir algo al respecto. (sobre kafka, no se vaya a mal interpretar. en caso de que Brian G. lea esto)

@@ -7,39 +7,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth" />
-        <module name="gateway" />
-        <module name="ms-Eureka" />
+        <module name="9-auth" />
+        <module name="10-gateway" />
+        <module name="8-eureka" />
       </profile>
-      <profile name="Annotation profile for user" enabled="true">
+      <profile name="Annotation profile for 6-review" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
         </processorPath>
-        <module name="notification" />
-        <module name="loan" />
-        <module name="review" />
-        <module name="penalty" />
-        <module name="1Book" />
-        <module name="reservation" />
-        <module name="user" />
+        <module name="1-book" />
+        <module name="6-review" />
+        <module name="2-user" />
+        <module name="5-penalty" />
+        <module name="3-loan" />
+        <module name="4-reservation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="7-notification" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="1Book" options="-parameters" />
-      <module name="auth" options="-parameters" />
-      <module name="gateway" options="-parameters" />
-      <module name="loan" options="-parameters" />
-      <module name="ms-Eureka" options="-parameters" />
-      <module name="notification" options="-parameters" />
-      <module name="penalty" options="-parameters" />
-      <module name="reservation" options="-parameters" />
-      <module name="review" options="-parameters" />
-      <module name="user" options="-parameters" />
+      <module name="1-book" options="-parameters" />
+      <module name="10-gateway" options="-parameters" />
+      <module name="2-user" options="-parameters" />
+      <module name="3-loan" options="-parameters" />
+      <module name="4-reservation" options="-parameters" />
+      <module name="5-penalty" options="-parameters" />
+      <module name="6-review" options="-parameters" />
+      <module name="7-notification" options="-parameters" />
+      <module name="8-eureka" options="-parameters" />
+      <module name="9-auth" options="-parameters" />
     </option>
   </component>
 </project>

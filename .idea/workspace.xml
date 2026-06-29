@@ -6,28 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/KafkaProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Reservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +40,11 @@
     &quot;accountId&quot;: &quot;1dd7176c-8f11-496a-99f3-7b3f5c0d6bda&quot;
   }
 }</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -57,7 +53,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -72,13 +68,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BookApplication.executor": "Run",
+    "Maven.1-book [clean].executor": "Run",
+    "Maven.1-book [compile].executor": "Run",
+    "Maven.10-gateway [clean].executor": "Run",
+    "Maven.10-gateway [compile].executor": "Run",
+    "Maven.1Book [clean].executor": "Run",
+    "Maven.1Book [compile].executor": "Run",
+    "Maven.2-user [clean].executor": "Run",
+    "Maven.2-user [compile].executor": "Run",
+    "Maven.3-loan [clean].executor": "Run",
+    "Maven.3-loan [compile].executor": "Run",
+    "Maven.4-reservation [clean].executor": "Run",
+    "Maven.4-reservation [compile].executor": "Run",
+    "Maven.5-penalty [clean].executor": "Run",
+    "Maven.5-penalty [compile].executor": "Run",
+    "Maven.6-review [clean].executor": "Run",
+    "Maven.6-review [compile].executor": "Run",
+    "Maven.7-notification [clean].executor": "Run",
+    "Maven.7-notification [compile].executor": "Run",
+    "Maven.8-eureka [clean].executor": "Run",
+    "Maven.8-eureka [compile].executor": "Run",
+    "Maven.9-auth [clean].executor": "Run",
+    "Maven.9-auth [compile].executor": "Run",
+    "Maven.auth [clean].executor": "Run",
+    "Maven.auth [compile].executor": "Run",
+    "Maven.gateway [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookApplication.executor": "Debug",
+    "Spring Boot.BookApplication.executor": "Run",
+    "Spring Boot.EurekaApplication.executor": "Run",
     "Spring Boot.LoanApplication.executor": "Run",
     "Spring Boot.PenaltyApplication.executor": "Run",
     "Spring Boot.ReservationApplication.executor": "Run",
@@ -89,7 +112,11 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Estudiador/Documents/Biblioteca",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -97,11 +124,10 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.BookApplication">
-    <configuration name="BookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="1Book" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucBook.book.BookApplication" />
+  <component name="RunManager" selected="Spring Boot.ReviewApplication">
+    <configuration name="BookApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cl.duocucBook.book.BookApplication" />
+      <module name="1-book" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cl.duocucBook.book.*" />
@@ -112,9 +138,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="0-monorepo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="0-monorepo" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration name="PenaltyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="penalty" />
+      <module name="5-penalty" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.penalty.PenaltyApplication" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +165,7 @@
     </configuration>
     <configuration name="ReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="reservation" />
+      <module name="4-reservation" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.reservation.ReservationApplication" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +179,7 @@
     </configuration>
     <configuration name="ReviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="review" />
+      <module name="6-review" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.review.ReviewApplication" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +193,7 @@
     </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="user" />
+      <module name="2-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucUser.UserApplication" />
       <extension name="coverage">
         <pattern>
@@ -170,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BookApplication" />
-        <item itemvalue="Spring Boot.PenaltyApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ReviewApplication" />
+        <item itemvalue="Spring Boot.PenaltyApplication" />
         <item itemvalue="Spring Boot.ReservationApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Application.BookApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -205,5 +242,15 @@
     <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
