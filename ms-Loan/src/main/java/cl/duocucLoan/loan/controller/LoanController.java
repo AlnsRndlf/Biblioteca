@@ -45,7 +45,7 @@ public class LoanController  {
     public ResponseEntity<LoanResponseDto> save(@RequestBody LoanRequestDto requestDto) {
         log.info("Solicitud recibida para registrar un nuevo préstamo. RUT: {}, Libro ISBN: {}", requestDto.getUserRut(), requestDto.getBookIsbn());
         LoanResponseDto savedLoan = service.save(requestDto);
-        log.info("Préstamo registrado exitosamente y respondiendo al cliente. ID Préstamo: {}", savedLoan.idLoan());
+        log.info("Préstamo registrado exitosamente y respondiendo al cliente. ID Préstamo: {}", savedLoan.getIdLoan());
         return new ResponseEntity<>(savedLoan, HttpStatus.CREATED);
     }
 

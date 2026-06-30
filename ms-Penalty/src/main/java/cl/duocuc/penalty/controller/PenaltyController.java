@@ -40,7 +40,7 @@ public class PenaltyController {
         log.info("Solicitud recibida para registrar una nueva multa. RUT: {}, Monto: {}, Motivo: '{}'",
                 request.getUserRut(), request.getAmount(), request.getReason());
         PenaltyResponseDto response = service.save(request);
-        log.info("Multa registrada exitosamente con ID: {}", response.idPenalty());
+        log.info("Multa registrada exitosamente con ID: {}", response.getIdPenalty());
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 }

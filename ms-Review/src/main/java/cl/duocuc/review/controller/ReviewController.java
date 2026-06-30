@@ -40,7 +40,7 @@ public class ReviewController {
         log.info("Solicitud recibida para registrar una reseña. Usuario RUT: {}, Libro ISBN: {}, Calificación: {}",
                 request.getUserRut(), request.getBookIsbn(), request.getRating());
         ReviewResponseDto savedReview = service.save(request);
-        log.info("Reseña registrada exitosamente respondiendo al cliente. ID Reseña: {}", savedReview.idReview());
+        log.info("Reseña registrada exitosamente respondiendo al cliente. ID Reseña: {}", savedReview.getIdReview());
         return ResponseEntity.status(HttpStatus.CREATED).body(savedReview);
     }
 }
