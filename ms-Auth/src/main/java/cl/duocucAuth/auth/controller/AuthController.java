@@ -6,6 +6,7 @@ import cl.duocucAuth.auth.model.AuthUser;
 import cl.duocucAuth.auth.repository.IAuthUserRepository;
 import cl.duocucAuth.auth.service.JwtService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
+@Slf4j
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
@@ -27,23 +29,27 @@ public class AuthController {
 
     @PostMapping("/register")
     public AuthUser register(@RequestBody AuthUser user) {
-
+        log.info("Intentando registrar nuevo usuario: {}", user.getUsername());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         if (user.getRole() == null || user.getRole().trim().isEmpty()) {
+            log.info("Asignando rol por defecto 'USER' al usuario: {}", user.getUsername());
             user.setRole("USER");
         }
-
-        return authUserRepository.save(user);
+        AuthUser savedUser = authUserRepository.save(user);
+        log.info("Usuario {} registrado exitosamente.", savedUser.getUsername());
+        return savedUser;
     }
 
     @PostMapping("/login")
     public AuthResponseDto login(@RequestBody AuthRequestDto request) {
+        log.info("Intento de login para el usuario: {}", request.getUsername());
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
         );
         AuthUser user = authUserRepository.findByUsername(request.getUsername()).orElseThrow();
         String token = jwtService.generateToken(user.getUsername(), user.getRole());
+        log.info("Login exitoso y token generado para el usuario: {}", user.getUsername());
         return new AuthResponseDto(token);
     }
 }

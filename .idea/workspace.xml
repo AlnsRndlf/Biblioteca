@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/db/changelog/migrations/01-create-table-auth-user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/db/changelog/migrations/01-create-table-auth-user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Penalty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Reservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zzz/01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/java/cl/duocucAuth/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/java/cl/duocucAuth/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/GlobalExcpetionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/service/PenaltyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/service/PenaltyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/service/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/service/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/GlobalHandlerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/service/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
