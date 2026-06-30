@@ -6,24 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/db/changelog/migrations/01-create-table-auth-user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/db/changelog/migrations/01-create-table-auth-user.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/service/KafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Reservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zzz/01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +62,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -100,8 +109,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthApplication.executor": "Run",
     "Spring Boot.BookApplication.executor": "Run",
     "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.LoanApplication.executor": "Run",
     "Spring Boot.PenaltyApplication.executor": "Run",
     "Spring Boot.ReservationApplication.executor": "Run",
@@ -124,20 +135,12 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.ReviewApplication">
-    <configuration name="BookApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cl.duocucBook.book.BookApplication" />
-      <module name="1-book" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cl.duocucBook.book.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Estudiador\Documents\Biblioteca\ms-Auth\src\main\resources\db\changelog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="0-monorepo" />
       <method v="2">
@@ -149,13 +152,13 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="PenaltyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="5-penalty" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.penalty.PenaltyApplication" />
+      <module name="9-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucAuth.auth.AuthApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cl.duocuc.penalty.*" />
+          <option name="PATTERN" value="cl.duocucAuth.auth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +166,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="4-reservation" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.reservation.ReservationApplication" />
+      <module name="8-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucEureka.eureka.EurekaApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cl.duocuc.reservation.*" />
+          <option name="PATTERN" value="cl.duocucEureka.eureka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,13 +180,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="6-review" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocuc.review.ReviewApplication" />
+      <module name="10-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucGateway.gateway.GatewayApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cl.duocuc.review.*" />
+          <option name="PATTERN" value="cl.duocucGateway.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="3-loan" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucLoan.loan.LoanApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cl.duocucLoan.loan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ReviewApplication" />
-        <item itemvalue="Spring Boot.PenaltyApplication" />
-        <item itemvalue="Spring Boot.ReservationApplication" />
+        <item itemvalue="Spring Boot.AuthApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.LoanApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Application.BookApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -11,12 +11,12 @@
         <module name="10-gateway" />
         <module name="8-eureka" />
       </profile>
-      <profile name="Annotation profile for 6-review" enabled="true">
+      <profile name="Annotation profile for 2-user" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="1-book" />
         <module name="6-review" />
