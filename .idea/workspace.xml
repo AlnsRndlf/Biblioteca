@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/java/cl/duocuc/notification/customer/LoanCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/java/cl/duocuc/notification/customer/LoanCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/java/cl/duocuc/notification/dto/LoanEventDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/java/cl/duocuc/notification/dto/LoanEventDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Notification/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
