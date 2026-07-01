@@ -29,7 +29,7 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
         String method = request.getMethod().name();
 
         // 1. Dejar pasar las peticiones públicas (Login y Registro)
-        if (path.contains("/api/v1/auth")) {
+        if (path.contains("/api/v1/auth") || path.contains("/v3/api-docs") || path.contains("/swagger-ui") || path.contains("/webjars")) {
             return chain.filter(exchange);
         }
 

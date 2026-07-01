@@ -5,6 +5,9 @@ import cl.duocucAuth.auth.dto.AuthResponseDto;
 import cl.duocucAuth.auth.model.AuthUser;
 import cl.duocucAuth.auth.repository.IAuthUserRepository;
 import cl.duocucAuth.auth.service.JwtService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -20,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 @Slf4j
+@Tag(name = "Seguridad (Auth)", description = "Endpoints públicos para el registro de credenciales y generación de Tokens JWT")
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
@@ -27,6 +31,8 @@ public class AuthController {
     private final JwtService jwtService;
     private final PasswordEncoder passwordEncoder;
 
+    @Operation(summary = "Crear credenciales de usuario", description = "Registra un nuevo usuario con contraseña cifrada (BCrypt) en la base de datos de seguridad. Si no se especifica rol, se asigna 'USER' por defecto.")
+    @ApiResponse(responseCode = "200", description = "Usuario registrado exitosamente")
     @PostMapping("/register")
     public AuthUser register(@RequestBody AuthUser user) {
         log.info("Intentando registrar nuevo usuario: {}", user.getUsername());
@@ -41,6 +47,8 @@ public class AuthController {
         return savedUser;
     }
 
+    @Operation(summary = "Iniciar sesión (Generar Token)", description = "Valida las credenciales del usuario y retorna un Token JWT con los permisos (RBAC) correspondientes.")
+    @ApiResponse(responseCode = "200", description = "Login exitoso, retorna el Token JWT")
     @PostMapping("/login")
     public AuthResponseDto login(@RequestBody AuthRequestDto request) {
         log.info("Intento de login para el usuario: {}", request.getUsername());

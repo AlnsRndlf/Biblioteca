@@ -9,4 +9,7 @@ en casos que este algun puerto ocupado:
 # cierra el programa y libera el puerto
 - taskkill /PID {PID} /F
 
+# link swagger:
+http://localhost:8080/swagger-ui.html
+
 

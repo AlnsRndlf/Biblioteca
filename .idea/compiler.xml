@@ -11,7 +11,7 @@
         <module name="10-gateway" />
         <module name="8-eureka" />
       </profile>
-      <profile name="Annotation profile for 2-user" enabled="true">
+      <profile name="Annotation profile for 6-review" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />

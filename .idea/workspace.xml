@@ -5,12 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002f79c7-e820-491f-8283-03c940956ca0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/java/cl/duocucAuth/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/java/cl/duocucAuth/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/java/cl/duocucBook/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Book/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Eureka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Gateway/src/main/java/cl/duocucGateway/gateway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/src/main/java/cl/duocucGateway/gateway/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/java/cl/duocucLoan/loan/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Loan/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/java/cl/duocuc/penalty/controller/PenaltyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Penalty/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/java/cl/duocuc/reservation/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Reservation/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/java/cl/duocuc/review/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-Review/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-User/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zzz/puerto-ocupado.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +153,7 @@
       <recent name="C:\Users\Estudiador\Documents\Biblioteca\ms-Auth\src\main\resources\db\changelog" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="0-monorepo" />
       <method v="2">
@@ -157,13 +179,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="10-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucGateway.gateway.GatewayApplication" />
+      <module name="3-loan" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duocucLoan.loan.LoanApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cl.duocucGateway.gateway.*" />
+          <option name="PATTERN" value="cl.duocucLoan.loan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthApplication" />
         <item itemvalue="Spring Boot.ReviewApplication" />
         <item itemvalue="Spring Boot.PenaltyApplication" />
         <item itemvalue="Spring Boot.ReservationApplication" />
+        <item itemvalue="Spring Boot.LoanApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -258,6 +280,11 @@
           <properties class="java.lang.IllegalStateException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ms-User/src/main/java/cl/duocucUser/controller/UserController.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
