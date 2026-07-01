@@ -1,3 +1,4 @@
+/*
 package cl.duocuc.notification.dto;
 
 import lombok.AllArgsConstructor;
@@ -17,3 +18,4 @@ public class LoanEventDto {
     private LocalDate loanDate;
     private String userEmail;
 }
+*/

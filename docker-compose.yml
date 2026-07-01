@@ -1,0 +1,140 @@
+version: '3.8'
+
+services:
+  ms-eureka:
+    build: ./ms-Eureka
+    container_name: ms-eureka
+    ports:
+      - "8761:8761"
+    networks:
+      - biblioteca-network
+
+  ms-gateway:
+    build: ./ms-Gateway
+    container_name: ms-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-auth:
+    build: ./ms-Auth
+    container_name: ms-auth
+    ports:
+      - "8089:8089"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-user:
+    build: ./ms-User
+    container_name: ms-user
+    ports:
+      - "8082:8082"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-book:
+    build: ./ms-Book
+    container_name: ms-book
+    ports:
+      - "8081:8081"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-loan:
+    build: ./ms-Loan
+    container_name: ms-loan
+    ports:
+      - "8083:8083"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-reservation:
+    build: ./ms-Reservation
+    container_name: ms-reservation
+    ports:
+      - "8084:8084"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-penalty:
+    build: ./ms-Penalty
+    container_name: ms-penalty
+    ports:
+      - "8085:8085"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-review:
+    build: ./ms-Review
+    container_name: ms-review
+    ports:
+      - "8086:8086"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+  ms-notification:
+    build: ./ms-Notification
+    container_name: ms-notification
+    ports:
+      - "8087:8087"
+    depends_on:
+      - ms-eureka
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://ms-eureka:8761/eureka/
+    extra_hosts:
+      - "localhost:host-gateway"
+    networks:
+      - biblioteca-network
+
+networks:
+  biblioteca-network:
+    driver: bridge

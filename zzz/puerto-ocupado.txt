@@ -12,4 +12,9 @@ en casos que este algun puerto ocupado:
 # link swagger:
 http://localhost:8080/swagger-ui.html
 
+# docker
+docker compose down pa apagar la wea
+docker compose up -d para prenderlo (el down espq -d hace q no se apaguen al cerrar la terminal)
 
+# todos los ms tiene su .jar del docker
+Get-ChildItem -Recurse -Filter "*.jar" | Where-Object { $_.DirectoryName -like "*target*" -and $_.Name -notlike "*original*" } | Select-Object Name, Length, LastWriteTime

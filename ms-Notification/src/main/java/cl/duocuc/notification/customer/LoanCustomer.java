@@ -1,3 +1,4 @@
+/*
 package cl.duocuc.notification.customer;
 
 import cl.duocuc.notification.dto.LoanEventDto;
@@ -20,3 +21,4 @@ public class LoanCustomer {
         // depedencia java mail añadida para dsp poder mandar las notificaciones al correo del usuario
     }
 }
+*/
