@@ -19,6 +19,8 @@ public class BookResponseDto {
     @JsonProperty("author")
     private String bookAuthor;
 
+    @JsonProperty("stock")
+    private Integer stock;
 }
 
 

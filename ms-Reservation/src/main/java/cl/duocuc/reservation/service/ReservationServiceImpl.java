@@ -63,7 +63,7 @@ public class ReservationServiceImpl implements IReservationService {
         }
         if (bookDto.getStock() > 0) {
             log.warn("Reserva rechazada: El libro ISBN {} tiene stock positivo ({}). No se requiere reserva, se puede pedir prestado directamente.", request.getBookIsbn(), bookDto.getStock());
-            throw new RuntimeException("Hay disponibles para retirar.");
+            throw new RuntimeException("stock disponible para retirar.");
         }
 
         log.info("Validaciones superadas. El libro no tiene stock, procediendo a guardar la reserva...");
@@ -90,7 +90,7 @@ public class ReservationServiceImpl implements IReservationService {
         Reservation reservation = repository.findById(idReservation).orElse(null);
         if (reservation == null) {
             log.warn("Búsqueda fallida: La reserva ID {} no existe.", idReservation);
-            throw new RuntimeException("La reserva de " + idReservation + " no encontrada en el sistema.");
+            throw new RuntimeException("La reserva de id " + idReservation + " no encontrada en el sistema.");
         }
         log.info("Reserva ID {} encontrada exitosamente.", idReservation);
         return toDto(reservation);

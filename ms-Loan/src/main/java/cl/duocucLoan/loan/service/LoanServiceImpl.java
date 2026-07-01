@@ -128,6 +128,11 @@ public class LoanServiceImpl implements ILoanService {
             throw new RuntimeException("libro no encontrado.");
         }
 
+        if (bookDto.getStock() == null || bookDto.getStock() <= 0) {
+            log.error("Creación fallida: Libro ISBN {} no tiene stock disponible (Stock actual: {}).", request.getBookIsbn(), bookDto.getStock());
+            throw new RuntimeException("El libro no tiene stock disponible para préstamo.");
+        }
+
         Loan loan = toEntity(request);
 
         log.info("Descontando stock (-1) del libro ISBN {} mediante BookClient...", request.getBookIsbn());
